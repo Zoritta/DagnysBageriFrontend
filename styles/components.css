@@ -1,0 +1,10 @@
+.nav-list { display: flex; gap: 1rem; padding: 1rem 2rem; }
+.nav-list a:hover { text-decoration: underline; }
+
+table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; background:#fff; }
+th, td { border: 1px solid #ddd; padding: 0.5rem; }
+th { background:#fafafa; text-align: left; }
+
+form { display: grid; gap: 0.5rem; max-width: 400px; background:#fff; padding:1rem; border:1px solid #ddd; border-radius:4px; }
+form label { display: flex; flex-direction: column; gap: 0.25rem; }
+form button { justify-self: start; padding: 0.5rem 1rem; }
