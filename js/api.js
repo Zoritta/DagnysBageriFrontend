@@ -33,3 +33,4 @@ export const updateProductPrice = (productName, newPrice) =>
 
 // --- Customer endpoints -----------------------------
 export const fetchCustomers = () => request(`${API_BASE}/customers`);
+console.log("customers", fetchCustomers); 

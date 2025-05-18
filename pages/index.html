@@ -1,0 +1,61 @@
+<!-- /frontend/pages/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dagny’s Bakery – Home</title>
+
+  <!-- go UP one level to reach /css/main.css -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <!-- ******** NAVBAR (copy-paste on every page in /pages) ******** -->
+  <nav>
+    <div class="wrapper">
+      <!-- index.html now lives in the same folder, so no “../” here -->
+      <a href="index.html"><strong>DAGNY’S BAKERY</strong></a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="customers.html">Customers</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Administrator</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ******** PAGE-SPECIFIC CONTENT ******** -->
+  <main>
+    <section class="card-grid">
+      <!-- Images live one level above:  ../img/... -->
+      <a class="card" href="products.html?category=bread">
+        <img src="../img/bread.jpg" alt="Variety of breads">
+        <h3>Bread</h3>
+      </a>
+
+      <a class="card" href="products.html?category=buns">
+        <img src="../img/buns.jpg" alt="Fresh cinnamon buns">
+        <h3>Buns</h3>
+      </a>
+
+      <a class="card" href="products.html?category=cakes">
+        <img src="../img/cakes.jpg" alt="Delicious cakes">
+        <h3>Cakes</h3>
+      </a>
+    </section>
+  </main>
+
+  <!-- ******** FOOTER ******** -->
+  <footer>
+    &copy; <span id="year"></span> Dagny’s Bakery – Freshly baked every day
+  </footer>
+
+  <!-- Any JS that lives in /js must also be reached via ../js/... -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
